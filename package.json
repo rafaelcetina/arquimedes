@@ -1,7 +1,7 @@
 {
-  "name": "electron-angularjs-tabs",
+  "name": "basel-ap-tabs",
   "version": "1.0.0",
-  "description": "Um aplicativo simples usando AngularJS, Sqlite, Electron e Bootstrap",
+  "description": "Base app for basel",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
     "electron-packager":"^6.0.0",
-    "sqlite-sync":"*",
+    "basel-cli":"*",
     "jquery":"^2.2.2",
     "angular": "^1.5.1",
     "angular-route": "^1.5.1",
