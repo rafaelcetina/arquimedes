@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/angular-tabs.css">
 </head>
-<body >
+<body>
 	<!-- Menu -->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -28,12 +28,12 @@
 
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist">
-				<li role="presentation" ng-repeat="tab in tabs" ng-class="{active: tab.active}"><a href="#" ng-click="activeMe(tab)">{{tab.name}}<button  ng-click="close(tab)" class="close">x</button></a></li>
+				<li role="presentation" ng-repeat="tab in tabs" ng-class="{active: tab.active}"><a href="#" ng-click="activeMe(tab)">{{tab.name}}<button ng-click="close(tab)" class="close">x</button></a></li>
 			</ul>
 
 			<!-- Tab panes -->
 			<div class="tab-content">
-				<div role="tabpanel" ng-repeat="tab in tabs" class="tab-pane" ng-class="{active: tab.active}" id="home" ng-include="tab.view">
+				<div role="tabpanel" ng-repeat="tab in tabs" class="tab-pane" ng-class="{active: tab.active}" id="home" ng-include="'views/'+tab.view">
 					
 				</div>
 			</div>
@@ -55,12 +55,13 @@
 	<script src="app/app.js"></script>
 
 	<!-- Controllers -->
-	<script src="app/controllers/homeController.js"></script>
-	<script src="app/controllers/mainController.js"></script>
-	<script src="app/controllers/personController.js"></script>
-	<script src="app/controllers/productController.js"></script>
+	<script src="controllers/homeController.js"></script>
+	<script src="controllers/mainController.js"></script>
+	<script src="controllers/personController.js"></script>
+	<script src="controllers/productController.js"></script>
+	<script src="controllers/testeController.js"></script>
 
 	<!-- Angular Bootstrap -->
 	<script src="app/angular.bootstrap.js"></script>
-</body>
-</html>
+
+</body></html>

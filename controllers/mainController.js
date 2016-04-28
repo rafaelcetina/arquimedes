@@ -1,14 +1,18 @@
-"USE STRICT";
+"use strict";
 app.controller("mainController", function($scope){
 
-	$scope.menus = basel.menu();
+	$scope.menus = basel.database.run("SELECT * FROM crud WHERE ativo = 1 AND show_menu = 1");
+
+	for(var i = 0 ; i < $scope.menus.length; i++){
+		$scope.menus[i].active = true;
+	}
 
 	$scope.tabs = [
-		{
-			name:'Home',
-			view:'app/views/home.html',
-			active: true
-		}
+	{
+		name:'Home',
+		view:'home.html',
+		active: true
+	}
 	];
 
 	$scope.addTab = function(options){
