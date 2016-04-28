@@ -1,18 +1,7 @@
 "USE STRICT";
 app.controller("mainController", function($scope){
 
-	$scope.menus = [
-		{
-			name: "Person",
-			view: "app/views/person.html",
-			active: true
-		},
-		{
-			name: "Product",
-			view: "app/views/product.html",
-			active: true
-		}
-	]
+	$scope.menus = basel.menu();
 
 	$scope.tabs = [
 		{
