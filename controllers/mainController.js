@@ -1,6 +1,7 @@
 "use strict";
 app.controller("mainController", function($scope){
 
+	$scope.app = basel.config;
 	$scope.menus = basel.database.run("SELECT * FROM crud WHERE ativo = 1 AND show_menu = 1");
 
 	for(var i = 0 ; i < $scope.menus.length; i++){

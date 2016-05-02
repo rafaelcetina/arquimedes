@@ -1,19 +1,25 @@
-# electron-angularjs-tabs
-Tab based application with Electron, AngularJS and Bootstrap.
-[Clube dos Geeks](//clubedosgeeks.com.br)
+# basel-app
+Base app for https://github.com/baseljs/basel.git
 
-## Use
-### 1 - Clone
+## Using
+Install BASEL
 ```shell
-git clone https://github.com/ClubeDosGeeksCoding/electron-angularjs-tabs.git
+npm install -g basel
+```
+Init the app
+```shel
+basel-init myApp -b tabs
 ```
 
-### 2 - Install
+Install dependencies
 ```shell
-npm install
+cd myApp && npm install
 ```
 
-### 3 - Start
+Run
 ```shell
 npm start
 ```
+
+## preview
+<img src="https://raw.githubusercontent.com/baseljs/baseljs.github.io/master/dist/img/tabs.png">
