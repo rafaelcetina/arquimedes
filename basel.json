@@ -1,0 +1,7 @@
+{
+    "name": "tabs",
+    "database": "database",
+    "title": "tabs",
+    "type": "simple",
+    "base": "tabs"
+}
